@@ -128,7 +128,7 @@ public class LoginController {
 
     @RequestMapping("/fileList")
     public ModelAndView fileList(){
-        //MD5加密
+        //MD5加密的
         String str = DigestUtils.md5DigestAsHex("Loushao1216".getBytes(Charset.forName("UTF-8")));
         System.out.println(str);
         ModelAndView mv = new ModelAndView("fileList");
