@@ -99,9 +99,9 @@ public class LoginController {
     public String addFile(MultipartFile file ,HttpServletRequest request) {
         if(!file.isEmpty()) {
             //上传文件路径
-            String url = request.getServletContext().getRealPath("/file/");
-            String path = url.replaceAll("webapp","resources");
-            System.out.println(path);
+            String url = "G:\\IdeaProjects\\mallPdf\\";
+            logger.info(url);
+            String path = url;
             //上传文件名
             String filename = file.getOriginalFilename();
             File filepath = new File(path,filename);
